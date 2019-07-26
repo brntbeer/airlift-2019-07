@@ -1,9 +1,11 @@
+#!/bin/bash
 # Output all commands run and fail if any fail
 set -e -x
 
 cd aks_advnet_rbac
 
 # Init terraform using the defined storage account 
+
 terraform init \
   -backend-config="storage_account_name=${TFSTATE_STORAGE}"
   
