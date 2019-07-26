@@ -34,6 +34,8 @@ steps:
 
       env
 
+      export ARM_ACCESS_KEY=$(ARM_ACCESS_KEY)
+
       terraform init \
         -backend-config="storage_account_name=$(TFSTATE_STORAGE)"
         
