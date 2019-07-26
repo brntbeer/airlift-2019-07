@@ -6,8 +6,6 @@ cd aks_advnet_rbac
 
 # Init terraform using the defined storage account 
 
-env
-
 terraform init \
   -backend-config="storage_account_name=${TFSTATE_STORAGE}"
   
