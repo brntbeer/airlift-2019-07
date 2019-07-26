@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: TerraformCli@0
-    inputs:
+  inputs:
     targetAzureSubscription: '$(subscription)'
     scriptLocation: 'scriptPath'
     scriptPath: 'terraform-launch.sh'
