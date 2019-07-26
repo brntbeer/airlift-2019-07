@@ -1,3 +1,4 @@
+#!/bin/bash
 # Output all commands run and fail if any fail
 set -e -x
 
